@@ -13,5 +13,5 @@ app.use(express.static('public'));
 // api route
 // html route
 app.listen(port, () => {
-  console.log('running');
+  console.log('http://localhost/3001/');
 });

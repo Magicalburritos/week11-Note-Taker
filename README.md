@@ -1,6 +1,6 @@
 # Note-Taker
 
-![GitHub](https://img.shields.io/github/license/magicalburritos/week11-Note-Taker)
+![GitHub](https://img.shields.io/github/license/Magicalburritos/week11-Note-Taker)
 
 ## Description
 

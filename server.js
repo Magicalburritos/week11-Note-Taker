@@ -14,6 +14,6 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-app.listen(port, () => {
-  console.log('http://localhost:3001/');
+app.listen(process.env.PORT || port, () => {
+  console.log('server is running');
 });

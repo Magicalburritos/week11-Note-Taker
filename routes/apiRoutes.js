@@ -41,13 +41,14 @@ router.delete('/notes/:id', (req, res) => {
     .then((data) => {
       const oldNotes = JSON.parse(data);
       for (let i = 0; i < oldNotes.length; i++) {
-        let noteId = oldNotes[1].id;
+        let noteId = oldNotes[i].id;
         if (noteId === id) {
           oldNotes.splice(i, 1);
         }
       }
 
       writeFileAsync('db/db.json', JSON.stringify(oldNotes));
+      res.json(oldNotes);
     })
     .catch((err) => {
       throw err;
